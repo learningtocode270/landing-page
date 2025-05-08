@@ -7,7 +7,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 32px 72px 32px 72px;
+    padding: 0px 72px 32px 72px;
+}
+
+.header-logo {
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
 }
 
 header .header-links-container {
@@ -25,7 +31,7 @@ header a {
 .intro {
     background-color: #1F2937;
     color: #F9FAF8;
-    padding: 200px 72px 32px 72px;
+    padding: 0px 72px 32px 72px;
 }
 .intro-container {
     display: flex;
@@ -47,6 +53,7 @@ header a {
 .description {
     font-size: 18px;
     color: #E5E7EB;
+    padding: 0 0 20px 0;
 }
 .sign-up-button {
     background-color: rgb(91, 91, 210);
@@ -66,8 +73,9 @@ header a {
 }
 
 .intro-right-column img {
-    border: 8px dotted lightgray;
     width: 100%;
+    height: auto;
+    max-width: 700px;
 }
 
 .intro .hook {
@@ -86,7 +94,7 @@ header a {
     font-size: 36px;
     color: #1F2937;
     font-weight: 900;
-    margin: 0 auto 0 auto;
+    margin: 0 auto 32px auto;
 }
 
 .section1 .box-container {
@@ -94,23 +102,33 @@ header a {
     flex-direction: row;
     justify-content: space-between;
     padding: 0 100px 0 100px;
+    gap: 12px;
 }
 
 .section1 .box-container .box img {
     display: block;
     padding: 8px 0 8px 0;
+    width: 50%;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .section2 {
     display: flex;
     flex-direction: column;
     background-color: #E5E7EB;
-    padding: 100px 170px 100px 170px;
+    padding: 50px 70px 50px 70px;
 }
 .section2 p {
     font-size: 36px;
     color: #1F2937;
-    font-family: 'light itallic', sans-serif;
+    font-style: itallic;
     text-align: center;
     margin: 0 auto 0 auto;
 }
@@ -123,7 +141,7 @@ header a {
     display: flex;
     flex-direction: row;
     background-color: rgb(93, 93, 244);
-    padding: 40px 60px 40px 60px;
+    padding: 20px 30px 20px 30px;
     margin: 60px 80px 60px 80px;
     color: white;
     border-radius: 10px;
@@ -131,7 +149,7 @@ header a {
 .section3 .call-to-action {
     display: flex;
     flex-direction: column;
-    flex 1;
+    flex: 1;
     font-weight: 900;
     font-size: 24px;
 }
@@ -139,6 +157,12 @@ header a {
 .section3 p {
     font-weight: 300;
     font-size: 18px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .section3 .sign-up-button {
